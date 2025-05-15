@@ -121,6 +121,9 @@ https://pan.quark.cn/s/8b7c6025f91f
 [书籍资料相关的，包括各种教程、小说等各种书籍](https://github.com/mswnlz/book)
 
 
+[健身、锻炼、饮食、营养，健康，睡眠等，持续更新中](https://github.com/mswnlz/healthy)
+
+
 ---------------
 
 # 资源主页
