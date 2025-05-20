@@ -5,8 +5,9 @@
 ### 「剪映PC模板250+」
 链接：https://pan.quark.cn/s/ee12848b1217
 
-### 「AI自媒体实操课 打造爆款内容」
-链接：https://pan.quark.cn/s/85d085edfc85
+### 「实拍 深圳 广州 西安 酒吧夜景 视频4K」
+链接：https://pan.quark.cn/s/7eac46911069
+
 
 //20250516
 ### 「AI自媒体实操课 打造爆款内容」
