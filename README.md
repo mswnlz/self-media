@@ -1,6 +1,9 @@
 # self-media
 自媒体相关资源，包括拉新，流量玩法、获客，转化、变现等资料，持续更新中
 
+### 【向阳花】2025 冯小刚电影
+链接: https://pan.baidu.com/s/1PfbClgpwuti99VOGwHWpoA?pwd=ekb6 提取码: ekb6 
+
 // 20250520
 ### 「剪映PC模板250+」
 链接：https://pan.quark.cn/s/ee12848b1217
