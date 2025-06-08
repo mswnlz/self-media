@@ -1,6 +1,9 @@
 # self-media
 自媒体相关资源，包括拉新，流量玩法、获客，转化、变现等资料，持续更新中
 
+### 「800+首顶级可商用音效BGM素材合集！全中文分类，精选素材」
+链接：https://pan.quark.cn/s/7896839c771a
+
 ### 【向阳花】2025 冯小刚电影
 链接: https://pan.baidu.com/s/1PfbClgpwuti99VOGwHWpoA?pwd=ekb6 提取码: ekb6 
 
