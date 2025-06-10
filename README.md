@@ -1,6 +1,9 @@
 # self-media
 自媒体相关资源，包括拉新，流量玩法、获客，转化、变现等资料，持续更新中
 
+[English](https://openaitx.github.io/view.html?user=mswnlz&project=self-media&lang=en) | [简体中文](https://openaitx.github.io/view.html?user=mswnlz&project=self-media&lang=zh-CN) | [繁體中文](https://openaitx.github.io/view.html?user=mswnlz&project=self-media&lang=zh-TW) | [日本語](https://openaitx.github.io/view.html?user=mswnlz&project=self-media&lang=ja) | [한국어](https://openaitx.github.io/view.html?user=mswnlz&project=self-media&lang=ko) | [हिन्दी](https://openaitx.github.io/view.html?user=mswnlz&project=self-media&lang=hi) | [ไทย](https://openaitx.github.io/view.html?user=mswnlz&project=self-media&lang=th) | [Français](https://openaitx.github.io/view.html?user=mswnlz&project=self-media&lang=fr) | [Deutsch](https://openaitx.github.io/view.html?user=mswnlz&project=self-media&lang=de) | [Español](https://openaitx.github.io/view.html?user=mswnlz&project=self-media&lang=es) | [Italiano](https://openaitx.github.io/view.html?user=mswnlz&project=self-media&lang=it) | [Русский](https://openaitx.github.io/view.html?user=mswnlz&project=self-media&lang=ru) | [Português](https://openaitx.github.io/view.html?user=mswnlz&project=self-media&lang=pt) | [Nederlands](https://openaitx.github.io/view.html?user=mswnlz&project=self-media&lang=nl) | [Polski](https://openaitx.github.io/view.html?user=mswnlz&project=self-media&lang=pl) | [العربية](https://openaitx.github.io/view.html?user=mswnlz&project=self-media&lang=ar) | [فارسی](https://openaitx.github.io/view.html?user=mswnlz&project=self-media&lang=fa) | [Türkçe](https://openaitx.github.io/view.html?user=mswnlz&project=self-media&lang=tr) | [Tiếng Việt](https://openaitx.github.io/view.html?user=mswnlz&project=self-media&lang=vi) | [Bahasa Indonesia](https://openaitx.github.io/view.html?user=mswnlz&project=self-media&lang=id)
+
+
 ### 「800+首顶级可商用音效BGM素材合集！全中文分类，精选素材」
 链接：https://pan.quark.cn/s/7896839c771a
 
