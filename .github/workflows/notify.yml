@@ -1,0 +1,31 @@
+name: Notify Multiple Telegram Chats on GitHub Push
+description: |
+  This GitHub Action sends a notification to multiple Telegram chats whenever there is a push to the main branch.
+  It uses the Telegram Bot API to send messages.
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send commit message to multiple Telegram chats
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          CHAT_IDS: ${{ secrets.TELEGRAM_CHAT_IDS }}
+        run: |
+          echo "BOT_TOKEN: $BOT_TOKEN"
+          echo "CHAT_IDS: $CHAT_IDS"
+          IFS=',' read -ra IDS <<< "$CHAT_IDS"
+          for chat in "${IDS[@]}"; do
+            response=$(curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
+              -d chat_id="$chat" \
+              --data-urlencode "text=  📢 新资源增加啦！
+              📝 提交内容: ${{ github.event.head_commit.message }}
+              🔗 查看详情: https://github.com/${{ github.repository }}
+              🎉 资料分享群：https://t.me/tgmknow")
+            echo "Telegram response for chat_id $chat: $response"
+          done
+

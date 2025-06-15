@@ -1,0 +1,11 @@
+name: 'AIknowledge Notify'
+description: 'A simple GitHub Action to print a message'
+author: 'mswnlz'
+inputs:
+  message:
+    description: 'The message to print'
+    required: false
+    default: 'Hello from AIknowledge Action!'
+runs:
+  using: 'node16'
+  main: 'index.js'

@@ -1,0 +1,8 @@
+{
+  "name": "aiknowledge-action",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@actions/core": "^1.10.0"
+  }
+}
