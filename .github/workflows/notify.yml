@@ -22,10 +22,9 @@ jobs:
           for chat in "${IDS[@]}"; do
             response=$(curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
               -d chat_id="$chat" \
-              --data-urlencode "text=  📢 新资源增加啦！
-              📝 提交内容: ${{ github.event.head_commit.message }}
-              🔗 查看详情: https://github.com/${{ github.repository }}
-              🎉 资料分享群：https://t.me/tgmknow")
+              --data-urlencode "text=
+              📝 新增资源: ${{ github.event.head_commit.message }}
+              🔗 查看详情: ${{ github.event.head_commit.url }}")
             echo "Telegram response for chat_id $chat: $response"
           done
 
