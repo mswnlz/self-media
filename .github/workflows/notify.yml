@@ -24,7 +24,8 @@ jobs:
               -d chat_id="$chat" \
               --data-urlencode "text=
               📝 新增资源: ${{ github.event.head_commit.message }}
-              🔗 查看详情: ${{ github.event.head_commit.url }}")
+              🔗 查看详情: ${{ github.event.head_commit.url }}
+              🔗 超过100T资料总站网站：https://doc.869hr.uk")
             echo "Telegram response for chat_id $chat: $response"
           done
 
