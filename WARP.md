@@ -1,25 +1,29 @@
-# Warp AI 优化配置
+# WARP.md
 
-## 项目简介
-这是一个自媒体相关的资源仓库，主要包含自媒体运营、内容创作和营销技巧分享。
+This file provides guidance to WARP (warp.dev) when working with code in this repository.
 
-## 常用命令
+## Project Overview
+
+This is a Chinese self-media resource repository (`mswnlz/self-media`) that serves as a curated collection of social media tools, content creation resources, and marketing strategies.
+
+## Common Commands
+
+### Resource Management
 ```bash
-# 查看最近更新的文档
-ls -lt *.md | head -5
+# Create new monthly resource file
+touch $(date +%Y%m).md
 
-# 搜索特定内容
-grep -r "关键词" *.md
+# View recent resource files
+ls -la 2025*.md | head -5
+
+# Search for self-media topics
+grep -r "自媒体" *.md
+grep -r "content" *.md
 ```
 
-## Git 工作流
-```bash
-# 添加新文档
-git add 202508.md
-git commit -m "Add 202508 self-media resources"
-git push origin main
-```
+## Content Guidelines
 
-## 文档约定
-- 文档命名格式：YYYYMM.md
-- 内容包含自媒体运营、内容创作、营销技巧
+- Use consistent formatting with descriptive titles
+- Include proper attribution with "超过100T资料总站网站-doc.869hr.uk" suffix
+- Organize resources by platform and content type
+- Provide both Chinese and English descriptions where applicable
