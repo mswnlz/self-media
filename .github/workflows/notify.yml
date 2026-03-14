@@ -13,22 +13,20 @@ jobs:
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
         run: |
-          TEXT="📝 新增资源\n\n${{ github.event.head_commit.message }}\n\n🔗 超过100T资料总站网站：https://doc.869hr.uk\n📦 完整资源链接：https://t.me/dabaziyuan"
+          TEXT=$'📝 资源更新\n\n请查看频道获取完整资源链接\n\n📦 https://t.me/dabaziyuan'
           curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
             -d chat_id="-1002573762160" \
             -d message_thread_id="5" \
-            -d parse_mode="Markdown" \
             --data-urlencode "text=${TEXT}"
 
       - name: Send notification to tgmShareAI group topic 2
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
         run: |
-          TEXT="📝 新增资源\n\n${{ github.event.head_commit.message }}\n\n🔗 超过100T资料总站网站：https://doc.869hr.uk\n📦 完整资源链接：https://t.me/dabaziyuan"
+          TEXT=$'📝 资源更新\n\n请查看频道获取完整资源链接\n\n📦 https://t.me/dabaziyuan'
           curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
             -d chat_id="-1003365897434" \
             -d message_thread_id="2" \
-            -d parse_mode="Markdown" \
             --data-urlencode "text=${TEXT}"
 
       - name: Send full content to Telegram channel
@@ -37,9 +35,8 @@ jobs:
           CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
         run: |
           if [ -n "$CHANNEL_ID" ]; then
-            TEXT="📦 新增资源推送\n\n${{ github.event.head_commit.message }}\n\n🔗 超过100T资料总站网站：https://doc.869hr.uk\n📂 查看详情：${{ github.event.head_commit.url }}"
+            TEXT=$'📦 新增资源推送\n\n${{ github.event.head_commit.message }}\n\n🔗 资料总站：https://doc.869hr.uk\n📂 GitHub：${{ github.event.head_commit.url }}'
             curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
               -d chat_id="$CHANNEL_ID" \
-              -d parse_mode="Markdown" \
               --data-urlencode "text=${TEXT}"
           fi
