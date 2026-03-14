@@ -15,7 +15,11 @@ jobs:
           CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
         run: |
           if [ -n "$CHANNEL_ID" ]; then
-            TEXT=$'📦 新增资源推送\n\n${{ github.event.head_commit.message }}\n\n🔗 资料总站：https://doc.869hr.uk\n📂 GitHub：${{ github.event.head_commit.url }}'
+            # 生成当前年月的网站页面链接（格式：YYYYMM）
+            CURRENT_MONTH=$(date +'%Y%m')
+            WEBSITE_URL="https://doc.869hr.uk/self-media/${CURRENT_MONTH}"
+            
+            TEXT=$'📦 新增资源推送\n\n${{ github.event.head_commit.message }}\n\n🔗 查看详情：'${WEBSITE_URL}$'\n🌐 资料总站：https://doc.869hr.uk'
             curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
               -d chat_id="$CHANNEL_ID" \
               --data-urlencode "text=${TEXT}"
