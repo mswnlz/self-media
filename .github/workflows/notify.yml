@@ -1,5 +1,5 @@
 name: Notify Telegram on GitHub Push
-description: 'Send notifications to Telegram groups (topics) and channel on push to main branch'
+description: 'Send notifications to Telegram channel on push to main branch'
 on:
   push:
     branches:
@@ -9,26 +9,6 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      - name: Send notification to tgmShare group topic 5
-        env:
-          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-        run: |
-          TEXT=$'📝 资源更新\n\n请查看频道获取完整资源链接\n\n📦 https://t.me/dabaziyuan'
-          curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
-            -d chat_id="-1002573762160" \
-            -d message_thread_id="5" \
-            --data-urlencode "text=${TEXT}"
-
-      - name: Send notification to tgmShareAI group topic 2
-        env:
-          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-        run: |
-          TEXT=$'📝 资源更新\n\n请查看频道获取完整资源链接\n\n📦 https://t.me/dabaziyuan'
-          curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
-            -d chat_id="-1003365897434" \
-            -d message_thread_id="2" \
-            --data-urlencode "text=${TEXT}"
-
       - name: Send full content to Telegram channel
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
