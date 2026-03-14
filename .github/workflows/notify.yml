@@ -1,5 +1,5 @@
 name: Notify Telegram on GitHub Push
-description: 'Send notifications to Telegram channel on push to main branch'
+description: 'Send notifications to Telegram channel only (groups are notified by Skills script)'
 on:
   push:
     branches:
@@ -9,7 +9,7 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      - name: Send full content to Telegram channel
+      - name: Send to channel
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
